@@ -1,0 +1,15 @@
+{
+  "name": "enigma-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "教学用 Enigma 三转子密码机后端（API + CLI）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/enigma.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js demo"
+  }
+}
+
