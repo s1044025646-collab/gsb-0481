@@ -1,0 +1,18 @@
+{
+  "name": "enigma-teaching-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "教学用 Enigma 三转子密码机后端（API + CLI + SQLite）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/src/cli.js serve",
+    "demo": "node dist/src/cli.js demo",
+    "cli": "node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
